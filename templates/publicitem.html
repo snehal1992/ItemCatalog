@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="#">
+  {% for c in item %}
+  <h3>{{c.name}}</h3>
+  <p>{{c.description}}</p>
+  {% endfor %}
+  <a href="{{url_for('showCategoryAndLatestItems')}}">Cancel </a>
+</form> 

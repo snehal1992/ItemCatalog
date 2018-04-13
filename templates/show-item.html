@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="#">
+  {% for c in item %}
+  <h3>{{c.name}}</h3>
+  <p>{{c.description}}</p>
+  {% if (c.user_id == creator): %}
+  <a href="{{url_for('editItem',category_id = c.category_id, item_id = c.id)}}">Edit</a>
+  <a href="{{url_for('deleteItem',category_id = c.category_id, item_id = c.id)}}">Delete</a>
+  {% endif %}
+  {% endfor %}
+  <a href="{{url_for('showCategoryAndLatestItems')}}">Cancel </a>
+</form> 
+
+</body>
+</html>

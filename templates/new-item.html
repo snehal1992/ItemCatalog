@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form action="{{url_for('newItem')}}", method="post">
+  Item name:
+  <input type="text" name="name">
+  <br>
+  Description:
+  <textarea  name="description">
+  </textarea>
+  <br>
+  <input type="text" name="category">
+  <input type="submit" value="Add">
+</form> 
+<a href="{{url_for('showCategoryAndLatestItems')}}">Cancel </a>
+
+</body>
+</html>
