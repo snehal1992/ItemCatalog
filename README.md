@@ -1,5 +1,7 @@
 # ItemCatalog
 
+Its an app that lets users create , delete, edit or update items of their own in each category .
+
 ### File Descriptions 
 
 * templates : Contain HTML files that would be rendered in UI
